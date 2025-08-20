@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body con fondo difuminado morado */
+body {
+    background: linear-gradient(135deg, #b39ddb, #9575cd, #7e57c2, #673ab7);
+    color: #fff; /* texto blanco para contraste */
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(103, 58, 183, 0.9); /* morado intenso semitransparente */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    color: #d1c4e9; /* morado pastel al pasar */
+    transform: scale(1.1);
+}
+
+/* Carrusel */
+#carouselExampleIndicators {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+#carouselExampleIndicators .carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* Sección Conócenos */
+.conocenos {
+    background: linear-gradient(to right, #9575cd, #b39ddb); /* degradado morado pastel */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 1000px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.conocenos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+
+.conocenos p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Botón dentro de Conócenos */
+.conocenos a.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #7e57c2; /* morado vibrante */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.conocenos a.btn:hover {
+    background-color: #b39ddb;
+    color: #673ab7;
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(103, 58, 183, 0.9);
+    color: #fff;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+}
+
+/* Secciones generales */
+.section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
